@@ -38,12 +38,18 @@ public class InvoiceTemplate extends JPanel {
         JPanel summarizationTable = generateChargeSumarization();
         this.add(summarizationTable);
         summarizationTable.setLocation(295,440);
-        summarizationTable.setSize(220,150);
+        summarizationTable.setSize(220,130);
 
         JPanel payment = generatePaymentInfo();
         this.add(payment);
         payment.setLocation(0,470);
         payment.setSize(290,100);
+
+        JButton button = new JButton(">> WYGENERUJ FAKTURĘ <<");
+        this.add(button);
+        button.setLocation(250,580);
+        button.setSize(200,50);
+
     }
 
     private JPanel generateCompanyData() {
